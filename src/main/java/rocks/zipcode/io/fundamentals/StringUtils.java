@@ -17,7 +17,7 @@ public class StringUtils {
         // get power-set of range
 
         // for every set in power-set
-            // uppercase indices of string using set
+        // uppercase indices of string using set
         return null;
     }
 
@@ -29,9 +29,9 @@ public class StringUtils {
     public static String upperCaseIndices(String string, Integer... indices) {
 
         String hold = string;
-        for(Integer index : indices){
+        for (Integer index : indices) {
             Character character = string.charAt(index);
-            hold = replaceAtIndex(hold, Character.toUpperCase(character),index);
+            hold = replaceAtIndex(hold, Character.toUpperCase(character), index);
         }
 
         return string;
@@ -60,4 +60,5 @@ public class StringUtils {
 //            chars[index] = ch;
 //            return String.valueOf(chars)
 //    }
+    }
 }
